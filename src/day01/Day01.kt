@@ -1,12 +1,17 @@
+package day01
+
+import println
+import readInput
+
 fun main() {
     // test if implementation meets criteria from the description, like:
-    val testInput1 = readInput("Day01_test")
+    val testInput1 = readInput("day01/Day01_test")
     check(part1(testInput1) == 142)
 
-    val testInput2 = readInput("Day01_1_test")
+    val testInput2 = readInput("day01/Day01_1_test")
     check(part2(testInput2) == 281)
 
-    val input = readInput("Day01")
+    val input = readInput("day01/Day01")
     part1(input).println()
     part2(input).println()
 }
