@@ -1,6 +1,5 @@
 package day02
 
-import println
 import readInput
 
 fun main() {
@@ -27,7 +26,7 @@ class Cube (val color: String, val cnt: Int)
 class Attempt (val cubesList: List<Cube>)
 class Game (val id: Int, val attemptsList: List<Attempt>)
 
-fun part1(input: List<String>): Int {
+private fun part1(input: List<String>): Int {
     val redCnt = 12
     val greenCnt = 13
     val blueCnt = 14
@@ -59,7 +58,7 @@ fun part1(input: List<String>): Int {
     return result
 }
 
-fun part2(input: List<String>): Int {
+private fun part2(input: List<String>): Int {
     var result = 0
 
     for (line in input) {
